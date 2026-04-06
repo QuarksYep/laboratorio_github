@@ -73,3 +73,29 @@ Como se puede apreciar cuando se va a hacer push hacia el repostorio en internet
 
 ### Ahora puedes modificar el codigo en la rama de desarrollo sin afectar la rama de produccion (main)
 
+## 5. Subir cambios al repositorio
+
+Luego de que se hallan modificado archivos y se hallan guardado se puede ejecutar el comando
+```bash
+    git status
+```
+para poder visualizar que archivos han sido modificados, para agregar estos archivos al staging (Un área intermedia donde preparas los cambios antes de guardarlos definitivamente)
+se utiliza el comando
+```bash
+    git add <nombre-archivo-modificado-1> <nombre-archivo-modificado-2> <nombre-archivo-modificado-3>....
+  #Cada archivo diferente que se vaya a agregar al staging va separado por espacios
+```
+Al ejecutar el comando y volver a verificar con "git status" se puede apreciar que los archivos quedaron almacenados para poder lanzarsen en el siguiente commit (guardar una versión del código con un mensaje).
+
+Ahora se crea el commit que se lanzara al repositorio agregando los cambios realizados en los archivos modificados en la rama dev.
+
+```bash
+    git commit -m "mi primer commit"
+```
+Una vez creado el registro del commit localmente ya se pueden aplicar los cambios en el repositorio utilizando el comando:
+```bash
+    git push origin dev
+```
+### Ahora en el repositorio se puede ver los cambios que hiciste a los archivos junto el mensaje del commit que realizaste
+![Paso 5-1](images/paso5-1.png)
+
