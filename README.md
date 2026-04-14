@@ -29,6 +29,10 @@ Esta guia de laboratorio solo explicara ejecucion de comandos mediante CLI.
 
 En este caso no se usara la funcion Fork de git para evitar posibles conflictos con el repositorio principal por algun PR.
 
+### Nota: si sale error de SSL ejecutar el siguiente comando 
+
+#### git config --global http.sslVerify false
+
 Ubicate en la carpeta o sitio donde quieres clonar el repositorio que creaste, abre la ventana de comandos o terminal de tu preferencia y ejecuta los siguientes comandos:
 ```bash
   git clone https://github.com/mnarvaezm96/lab_github.git
